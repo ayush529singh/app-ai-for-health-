@@ -1,0 +1,22 @@
+{
+  "name": "morning-shake-ai-backend",
+  "version": "1.0.0",
+  "description": "Express backend for Morning Protein Shake AI using the Gemini API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "protein",
+    "shake",
+    "nutrition",
+    "gemini",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
