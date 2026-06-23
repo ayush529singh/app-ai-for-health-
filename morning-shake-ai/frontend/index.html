@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morning Protein Shake AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Fitness fuel • breakfast ideas • nutrition guidance</p>
+        <h1>Morning Protein Shake AI</h1>
+        <p class="hero-copy">
+          Ask an AI-powered nutrition assistant for protein shake recipes, ingredient swaps,
+          calorie estimates, and healthy morning routine ideas tailored to your goals.
+        </p>
+
+        <div class="ask-card" aria-label="Ask the AI assistant">
+          <label for="questionInput">What would you like to know?</label>
+          <textarea
+            id="questionInput"
+            rows="4"
+            placeholder="Example: Create a high-protein banana shake for muscle gain under 500 calories."
+          ></textarea>
+          <button id="askButton" type="button">Ask AI</button>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="shake-glass">
+          <div class="foam"></div>
+          <div class="straw"></div>
+          <div class="leaf leaf-one"></div>
+          <div class="leaf leaf-two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="response-section" aria-live="polite">
+      <div class="section-heading">
+        <span class="section-icon">🤖</span>
+        <h2>AI Nutrition Assistant</h2>
+      </div>
+      <div id="loadingIndicator" class="loading hidden">
+        <span></span><span></span><span></span>
+        <p>Blending a helpful answer...</p>
+      </div>
+      <article id="aiResponse" class="response-box">
+        Ask a question to get recipe ideas, nutrition estimates, and safe health-focused guidance.
+      </article>
+    </section>
+
+    <section class="recipes-section">
+      <div class="section-heading">
+        <span class="section-icon">🥤</span>
+        <h2>Sample Morning Shake Ideas</h2>
+      </div>
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <div class="recipe-emoji">🍌</div>
+          <h3>Banana Protein Shake</h3>
+          <p>Banana, vanilla protein, Greek yogurt, milk, cinnamon, and ice for creamy workout fuel.</p>
+          <span>Great for: energy + muscle recovery</span>
+        </article>
+        <article class="recipe-card">
+          <div class="recipe-emoji">🥜</div>
+          <h3>Peanut Butter Shake</h3>
+          <p>Peanut butter, chocolate protein, banana, almond milk, and chia seeds for a rich breakfast.</p>
+          <span>Great for: healthy calories</span>
+        </article>
+        <article class="recipe-card">
+          <div class="recipe-emoji">🌾</div>
+          <h3>Oats Protein Shake</h3>
+          <p>Rolled oats, protein powder, berries, milk, flaxseed, and a touch of honey for lasting fullness.</p>
+          <span>Great for: steady morning energy</span>
+        </article>
+        <article class="recipe-card">
+          <div class="recipe-emoji">🍓</div>
+          <h3>Fruit Smoothie</h3>
+          <p>Mixed berries, spinach, protein powder, yogurt, and coconut water for a refreshing start.</p>
+          <span>Great for: vitamins + hydration</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

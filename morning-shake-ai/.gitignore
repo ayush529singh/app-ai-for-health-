@@ -1,0 +1,9 @@
+# Environment variables and secrets
+backend/.env
+.env
+*.local
+
+# Dependencies and generated files
+node_modules/
+npm-debug.log*
+.DS_Store
